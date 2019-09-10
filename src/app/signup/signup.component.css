@@ -1,0 +1,22 @@
+.signup_btn .btn{
+  width: 224px;
+  text-align: left;
+}
+
+.sinup_mail .btn{
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(136,136,136,.5) !important;
+  box-shadow: 0 1px 3px 0 rgba(136,136,136,.5) !important;
+  color: #62c8df !important;
+  border: 0px;
+}
+
+.sinup_mail .btn .fas {
+  color: #c7c7c7;
+}
+
+.singup_p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}

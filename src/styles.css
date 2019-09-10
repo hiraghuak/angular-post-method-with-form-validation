@@ -1,1 +1,185 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+  background: #f6f6f6;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+::-moz-placeholder {
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+
+
+
+.marrow_body {
+  background-color: #fff;
+  box-shadow: 0 2px 44px 0 rgba(158, 158, 158, .5);
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10%;
+  border-radius: 4px;
+}
+
+.login_top p {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+
+.login_top {
+  padding: 50px 50px 5px 50px;
+}
+
+.form-control {
+  border: 0px;
+  border-bottom: 1px solid #e4e4e4;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+  font-size: 24px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff00;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+  border-bottom: 1px solid #62c8df;
+}
+
+.get {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.get .btn {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: #62c8df;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .09);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .09);
+  border-radius: 0;
+  padding: 10px 20px;
+  border: #62c8df;
+}
+
+.get .btn:hover {
+  color: #fff !important;
+  -webkit-box-shadow: 0 2px 6px 2px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, .1);
+  background-color: #72a1ab;
+}
+
+
+.try_other_login_method {
+  margin: 30px 0 30px 0px;
+}
+
+.try_other_login_method a {
+  color: #62c8df;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.new_user {
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.new_user p {
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+.new_user p a {
+  color: #62c8df;
+}
+
+.enteryournumber .input_space_right {
+  padding-left: 10px;
+}
+
+a:hover {
+  color: #23527c !important;
+  text-decoration: none;
+}
+
+.forgot_pass {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.forgot_pass a {
+  color: #4a90e2;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.fb_login {
+  text-align: center;
+}
+
+.fb_login .btn {
+  background-color: #3b5998;
+  color: #fff;
+  border: 1px solid #3b5998;
+  border-radius: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px 20px;
+}
+
+.fb_login span:nth-child(1) {
+  position: relative;
+  margin-right: 20px;
+}
+
+.fb_login span:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  border-right: 2px solid whitesmoke;
+  background-color: aqua;
+  height: 23px;
+  right: -10px;
+}
+
+.invalid-feedback div {
+  background-color: #fde4dc;
+  padding: 10px 10px;
+  border: 1px solid #ffc6b5;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: 0.45 !important;
+}
+

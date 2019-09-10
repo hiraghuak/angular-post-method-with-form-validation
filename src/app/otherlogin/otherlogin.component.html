@@ -1,0 +1,43 @@
+<div class="login_top">
+  <p>Log in to your Marrow account</p>
+  <form name="form" [formGroup]="form">
+    <div class="enteryournumber">
+      <div class="row no-gutters ">
+        <div class=" col-md-12 input_space_right">
+          <input type="email" class="form-control" placeholder="Enter your email" autocomplete="off"
+            formControlName="email" [ngClass]="{'is-invalid': form.get('email').touched && form.get('email').invalid}"
+            #email>
+          <div *ngIf="form.get('email').touched && form.get('email').invalid" class="invalid-feedback">
+            <div *ngIf="form.get('email').errors['required']">Email Name is required</div>
+            <div *ngIf="form.get('email').errors['email']">Email must be a valid email address</div>
+          </div>
+        </div>
+        <div class=" col-md-12 input_space_right">
+          <input type="password" class="form-control" placeholder="Enter your password" autocomplete="off"
+            placeholder="Enter your email" autocomplete="off" formControlName="password"
+            [ngClass]="{'is-invalid': form.get('password').touched && form.get('password').invalid}" #password>
+          <div *ngIf="form.get('password').touched && form.get('password').invalid" class="invalid-feedback">
+            <div *ngIf="form.get('password').errors['required']">Password Must Provide</div>
+            <div *ngIf="form.get('password').hasError('minlength')">password must have 6 charector</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="forgot_pass">
+      <a routerLink="/forgot-password" routerLinkActive="active"> Forgot password?</a>
+    </div>
+    <div class="get">
+      <button type="submit" class="btn btn-primary" (click)="onClickMe(email.value,password.value)" [disabled]="!form.valid">Log in to Marrow</button>
+    </div>
+  </form>
+  <div class="fb_login">
+    <button type="button" class="btn btn-primary">
+      <span><i class="fab fa-facebook-f"></i></span>
+      <span>Log in with Facebook</span>
+    </button>
+  </div>
+</div>
+<div class="new_user">
+  <hr>
+  <p> New user? <a routerLink="/signup" routerLinkActive="active">Signup</a> </p>
+</div>

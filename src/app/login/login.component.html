@@ -1,0 +1,30 @@
+<div class="login_top">
+  <p>Log in to your Marrow account</p>
+  <form name="form" [formGroup]="form">
+    <div class="enteryournumber">
+      <div class="row no-gutters ">
+        <div class=" col-md-2">
+          <input type="text" class="form-control" placeholder="+91" value="+91">
+        </div>
+        <div class=" col-md-10 input_space_right">
+          <input type="text" class="form-control" placeholder="Enter your phone number" formControlName="phonenumber" [ngClass]="{'is-invalid': form.get('phonenumber').touched && form.get('phonenumber').invalid}"
+          #phonnumber pattern="[0-9]*">
+          <div *ngIf="form.get('phonenumber').touched && form.get('phonenumber').invalid" class="invalid-feedback">
+              <div *ngIf="form.get('phonenumber').errors['required']">Phone number is required</div>
+              <div *ngIf="form.get('phonenumber').hasError('minlength')">Phone number must have 10 charector</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="get">
+      <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Get OTP</button>
+    </div>
+    <div class="try_other_login_method">
+      <a routerLink="/other-login" routerLinkActive="active">Try Other login methods</a>
+    </div>
+  </form>
+</div>
+<div class="new_user">
+  <hr>
+  <p> New user? <a routerLink="/signup" routerLinkActive="active">Signup</a> </p>
+</div>
